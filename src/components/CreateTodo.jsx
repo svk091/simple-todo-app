@@ -5,10 +5,10 @@ import { todosAtom } from "../store/atoms/todos";
 import { useEffect, useState } from "react";
 
 export function CreateTodo() {
-    // const [title, setTitle] = useRecoilState(titleAtom);
-    // const [description, setDescription] = useRecoilState(descriptionAtom);
-    const [title, setTitle] = useState('');
-    const [description, setDescription] = useState('');
+    const [title, setTitle] = useRecoilState(titleAtom);
+    const [description, setDescription] = useRecoilState(descriptionAtom);
+    // const [title, setTitle] = useState('');
+    // const [description, setDescription] = useState('');
     const [todos, setTodos] = useRecoilState(todosAtom);
     return (
         <div style={{margin : '20px', padding : '10px', border: '2px solid black'}}>
